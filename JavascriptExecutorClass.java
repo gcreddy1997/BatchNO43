@@ -28,7 +28,7 @@ public class JavascriptExecutorClass {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	        
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);		       
         driver.manage().deleteAllCookies();
-        Thread.sleep(2000);
+      
         
         //Way 2:
         // able to find the element by SWD
@@ -39,6 +39,7 @@ public class JavascriptExecutorClass {
          //       SWD        JS                       SWD
         js.executeScript(" arguments[0].setAttribute('style','background:yellow; border:2px double red'); ", e);
         js.executeScript("   arguments[0].value='9871536682';    " , e);
+        Thread.sleep(2000);
         Thread.sleep(2000);
         
         //way1:
